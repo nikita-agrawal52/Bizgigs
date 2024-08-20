@@ -1,0 +1,11 @@
+
+
+
+const {Router} = require('express');
+const { createCustomer } =require('../controller/customerController') ;
+
+const router = Router();
+router.post("/",createCustomer);
+
+
+module.exports= router
